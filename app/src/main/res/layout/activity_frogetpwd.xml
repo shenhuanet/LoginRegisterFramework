@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/iv_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:onClick="onClick"
+        android:padding="20dp"
+        android:src="@mipmap/ic_login_cancle_normal" />
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="84dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/layout_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:background="@android:color/white"
+        android:layout_below="@+id/iv_logo" >
+
+        <com.shenhua.loginandregister.views.CleanEditText
+            android:id="@+id/et_phone"
+            style="@style/login_edit_style"
+            android:hint="手机号"
+            android:inputType="phone"
+            android:layout_toLeftOf="@+id/btn_send_verifi_code"
+            android:maxLength="11" >
+
+            <requestFocus />
+        </com.shenhua.loginandregister.views.CleanEditText>
+
+        <Button
+            android:id="@+id/btn_send_verifi_code"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="#f3f4f8"
+            android:text="@string/send_verification_code"
+            android:textColor="#B1B1B3"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <com.shenhua.loginandregister.views.CleanEditText
+        android:id="@+id/et_password"
+        style="@style/login_edit_style"
+        android:layout_below="@+id/et_verifiCode"
+        android:layout_marginTop="0.5dp"
+        android:ems="10"
+        android:hint="密码"
+        android:inputType="textPassword" />
+
+    <com.shenhua.loginandregister.views.CleanEditText
+        android:id="@+id/et_verifiCode"
+        style="@style/login_edit_style"
+        android:layout_below="@+id/layout_phone"
+        android:layout_marginTop="0.5dp"
+        android:ems="10"
+        android:hint="验证码"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btn_create_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_login_selector"
+        android:onClick="onClick"
+        android:text="@string/reset_pwd"
+        android:textColor="#5c5c5c"
+        android:textSize="16sp"
+        android:layout_below="@+id/et_password" />
+
+
+
+</RelativeLayout>

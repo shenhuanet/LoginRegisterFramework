@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">登录注册框架</string>
+    <string name="action_settings">Settings</string>
+    <string name="login">登录</string>
+    <string name="phone">请输入您的电话号码</string>
+    <string name="password">请输入您的密码</string>
+    <string name="use_third_account">第三方账号登录</string>
+    <string name="create_infm_account">创建账号</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="no_install_wechat">未安装微信</string>
+    <string name="no_install_qq">未安装QQ</string>
+    <string name="tip_loging">登录中...</string>
+    <string name="tip_begin_oauth">开始授权...</string>
+    <string name="tip_login_fail">登录失败</string>
+    <string name="oauth_fail">授权失败</string>
+    <string name="oauth_cancle">授权取消</string>
+    <string name="tip_phone_regex_not_right">手机号码格式不正确</string>
+    <string name="tip_account_empty">请输入您的手机号或邮箱地址</string>
+    <string name="tip_account_regex_not_right">手机号格式不正确</string>
+    <string name="tip_password_can_not_be_empty">密码不能为空</string>
+    <string name="xiaowu">IT_xiao小巫</string>
+    <string name="user_rule">用户协议</string>
+    <string name="create_account">创建账号</string>
+    <string name="send_verification_code">获取验证码</string>
+    <string name="count_down">%ss</string>
+    <string name="tip_please_input_phone">请输入手机号码</string>
+    <string name="tip_phone_can_not_be_empty">手机号码不能为空</string>
+    <string name="tip_please_input_code">请输入验证码</string>
+    <string name="tip_please_input_6_32_password">请输入6-32个密码</string>
+    <string name="reset_pwd">重置密码</string>
+
+</resources>
